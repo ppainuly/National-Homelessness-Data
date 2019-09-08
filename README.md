@@ -189,10 +189,10 @@ The query generates a list of dictionary, with one document in this case. The da
 To get the data for a specific state, for example texas, we need to run the query where 'State' = 'Alabama'
 
 <pre>
-list(db.jail_collection.find('State' = 'Alabama')
+list(db.jail_collection.find({'State' : 'Alabama'})
 </pre>
 
-The query will return prison statistics for all years, for Alabama, for three metrics, Total count, Male count and Female count
+The query will return prison statistics for all years, for Alabama, for three metrics, Total count, Male count and Female count in a list, containing three dictionaries for each metric.
 
 <pre>
 [{'1978': 5625,
@@ -322,3 +322,18 @@ The query will return prison statistics for all years, for Alabama, for three me
   'Total/Sex': 'Female',
   '_id': ObjectId('5d74b430c45e7944d4dc2f85')}]
   </pre>
+  
+  ## Homeless data example
+  
+  Query to find a certain homeless shelter by row ID
+  
+  <pre>
+inventory = list(db.collection.find({'Row #': 336611}))
+print(inventory)
+ </pre>
+ 
+ Output - 
+ 
+ <pre>
+ [{'_id': ObjectId('5d747ebdc945687db783b7d8'), 'Row #': 336611, 'CocState': 'AR', 'CoC': ' Boone, Baxter, Marion, Newton Counties CoC', 'Coc\\ID': 1493, 'HudNum': 'AR-512', 'Status': 'Submitted', 'year': 2018, 'Organization ID': 12792, 'Organization Name': 'Sanctuary Inc.', 'Project ID': 28012, 'Project Name': 'Domestic Violence Shelter', 'Project Type': 'ES', 'Bed Type': 'F', 'Geo Code': 59009, 'Inventory Type': 'C', 'beginsOperationsWithinYear': nan, 'Target Population A': 'SFHC', 'Target Population B': 'DV', 'Victim Service Provider': 1, 'address1': nan, 'address2': nan, 'city': nan, 'state': nan, 'zip': nan, 'Beds HH w/ Children': 16.0, 'Units HH w/ Children': 5.0, 'HMIS Beds HH w/ Children': nan, 'Veteran Beds HH w/ Children': 0.0, 'Youth Beds HH w/ Children': 0.0, 'CH Beds HH w/ Children': nan, 'Beds HH w/o Children': 0.0, 'HMIS Beds HH w/o Children': nan, 'Veteran Beds HH w/o Children': 0.0, 'Youth Beds HH w/o Children': 0.0, 'CH Beds HH w/o Children': nan, 'Beds HH w/ only Children': 0.0, 'HMIS Beds HH w/ only Children': nan, 'CH Beds HH w only Children': nan, 'Year-Round Beds': 16, 'DV Beds': 16.0, 'Total Seasonal Beds': 0.0, 'Seasonal Beds Available in HMIS': 0.0, 'Availability Start Date': None, 'Availability End Date': None, 'O/V Beds': 0.0, 'HMIS O/V Beds': 0.0, 'PIT Count': 5.0, 'Total Beds': 16, 'Updated On': datetime.datetime(2018, 4, 16, 10, 38, 49), 'questionUsesDescriptorElements': 0, 'questionDesiresToUseDescriptorElements': 0.0, 'notes': nan}]
+ </pre>
