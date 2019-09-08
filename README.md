@@ -80,7 +80,7 @@ browser = Browser('chrome', **executable_path, headless=False)
 # browser = Browser('chrome', **executable_path, headless=False)
 </pre>
 
-Run all from Celle-->Run All
+Run all from Cells-->Run All
 
 ![Run ETL Notebook](img/notebook_run_all.png)
 
@@ -337,3 +337,7 @@ print(inventory)
  <pre>
  [{'_id': ObjectId('5d747ebdc945687db783b7d8'), 'Row #': 336611, 'CocState': 'AR', 'CoC': ' Boone, Baxter, Marion, Newton Counties CoC', 'Coc\\ID': 1493, 'HudNum': 'AR-512', 'Status': 'Submitted', 'year': 2018, 'Organization ID': 12792, 'Organization Name': 'Sanctuary Inc.', 'Project ID': 28012, 'Project Name': 'Domestic Violence Shelter', 'Project Type': 'ES', 'Bed Type': 'F', 'Geo Code': 59009, 'Inventory Type': 'C', 'beginsOperationsWithinYear': nan, 'Target Population A': 'SFHC', 'Target Population B': 'DV', 'Victim Service Provider': 1, 'address1': nan, 'address2': nan, 'city': nan, 'state': nan, 'zip': nan, 'Beds HH w/ Children': 16.0, 'Units HH w/ Children': 5.0, 'HMIS Beds HH w/ Children': nan, 'Veteran Beds HH w/ Children': 0.0, 'Youth Beds HH w/ Children': 0.0, 'CH Beds HH w/ Children': nan, 'Beds HH w/o Children': 0.0, 'HMIS Beds HH w/o Children': nan, 'Veteran Beds HH w/o Children': 0.0, 'Youth Beds HH w/o Children': 0.0, 'CH Beds HH w/o Children': nan, 'Beds HH w/ only Children': 0.0, 'HMIS Beds HH w/ only Children': nan, 'CH Beds HH w only Children': nan, 'Year-Round Beds': 16, 'DV Beds': 16.0, 'Total Seasonal Beds': 0.0, 'Seasonal Beds Available in HMIS': 0.0, 'Availability Start Date': None, 'Availability End Date': None, 'O/V Beds': 0.0, 'HMIS O/V Beds': 0.0, 'PIT Count': 5.0, 'Total Beds': 16, 'Updated On': datetime.datetime(2018, 4, 16, 10, 38, 49), 'questionUsesDescriptorElements': 0, 'questionDesiresToUseDescriptorElements': 0.0, 'notes': nan}]
  </pre>
+ 
+ ### Source - 
+ Bureau of Justice - https://www.bjs.gov/index.cfm?ty=nps
+ Housing and Urban Development - https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/
