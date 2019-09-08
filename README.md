@@ -339,5 +339,6 @@ print(inventory)
  </pre>
  
  ### Source - 
- Bureau of Justice - https://www.bjs.gov/index.cfm?ty=nps
- Housing and Urban Development - https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/
+ *Bureau of Justice - https://www.bjs.gov/index.cfm?ty=nps*
+ 
+ *Housing and Urban Development - https://www.hudexchange.info/resource/3031/pit-and-hic-data-since-2007/*
