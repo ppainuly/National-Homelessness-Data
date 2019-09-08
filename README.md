@@ -65,8 +65,50 @@ On terminal/bash, run Mongo Instange
 mongod
 </pre>
 
-#### Download the notebook BJS_scraping.ipynb. Run all from Celle-->Run All
+#### Download the notebook BJS_scraping.ipynb. 
+
+Comment out the Mac users part of Chromedriver(and uncomment out the Windows user part) if you are using a windows machine. Else you are good to go.
+
+<pre>
+On ln 21:
+#Mac Users
+executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+browser = Browser('chrome', **executable_path, headless=False)
+
+# Windows Users
+# executable_path = {'executable_path': 'chromedriver.exe'}
+# browser = Browser('chrome', **executable_path, headless=False)
+</pre>
+
+Run all from Celle-->Run All
 
 ![Run ETL Notebook](img/notebook_run_all.png)
 
-**Wait 5 mins.** Get some ice-creem or if you are calorie concious, then get some black coffee and check your social network updates in the meantime. The fun is about to begin. 
+**Wait 5 mins.** Get some ice-creem or if you are calorie conscious, then get some black coffee and check your social network updates in the meantime. The fun is about to begin. 
+
+Once the notebook is executed, it will create a Mongo DB database with two collections - 
+
+** Database : incarceration**
+  ** Collections - **
+    ** Prison data : jail_collection**
+    ** Homeless Data : prison_data**
+    
+The following commands show our mongo db set up - 
+
+### Mongo Client
+<pre>
+conn = "mongodb://localhost:27017"
+client = pymongo.MongoClient(conn)
+</pre>
+
+### Database
+<pre>
+db = client.incarceration
+<pre>
+
+### Collections
+<pre>
+db.jail_collection.drop()
+db.prison_data
+</pre>
+
