@@ -18,7 +18,11 @@
 The datasets can be explored by downloading our jupyter notebook(BJS_scraping.ipynb) and running the entire notebook. The notebook will create a local Mongo Database with two collections, one for prison data and another for Homeless data. If time is of the essance, or you do not have minimum requirements to run the notebook/mongo db, we encourage the use of the csv data sets provided. The csv data files are exactly the same as the documents in the Mongo db collections for the two data sources.
 
 ### CSV Data Set
-The csv [datasets](https://github.com/ppainuly/National-Homelessness-Data/tree/master/data)can be found in the **data** folder of this repository.   
+The csv [datasets](https://github.com/ppainuly/National-Homelessness-Data/tree/master/data) can be found in the **data** folder of this repository.   
+<pre>
   The folder has the following files - 
-  **homelessness.csv** - This file has the entire data from HUD database for United States. 
-  **prison_data.csv** - This file has prison data on a National and State level scrapped from BJS website. 
+  
+  <em>homelessness.csv</em> - This file has the entire data from HUD database for United States. 
+  
+  <em>prison_data.csv</em> - This file has prison data on a National and State level scrapped from BJS website.
+</pre> 
