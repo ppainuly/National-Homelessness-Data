@@ -49,3 +49,12 @@ import requests
 from urllib.parse import urlparse
 from pprint import pprint
 </pre>
+To install the dependencies, open terminal(mac) and bash(windows) and run
+<pre>
+pip install <module name>
+</pre>
+
+For example
+**pip install pandas**
+to install Pandas and then call the **import pandas as pd** to import pandas
+
