@@ -112,3 +112,12 @@ db.jail_collection.drop()
 db.prison_data
 </pre>
 
+To see the collections in the database - 
+<pre>
+# Get the collection names in the database
+db.collection_names()
+</pre>
+Output - 
+<pre>
+['jail_collection', 'prison_data']
+</pre>
