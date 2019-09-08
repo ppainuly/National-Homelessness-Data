@@ -85,16 +85,6 @@ Run all from Cells-->Run All
 ![Run ETL Notebook](img/notebook_run_all.png)
 
 **Wait 5 mins.** Get some ice-creem or if you are calorie conscious, then get some black coffee and check your social network updates in the meantime. The fun is about to begin. 
-
-Once the notebook is executed, it will create a Mongo DB database with two collections - 
-
-Database : incarceration
-
-Collections -
-
-  Prison data : jail_collection
-
-  Homeless Data : prison_data
     
 The following commands show our mongo db set up - 
 
