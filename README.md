@@ -104,7 +104,7 @@ client = pymongo.MongoClient(conn)
 ### Database
 <pre>
 db = client.incarceration
-<pre>
+</pre>
 
 ### Collections
 <pre>
