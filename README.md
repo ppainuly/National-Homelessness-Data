@@ -69,3 +69,4 @@ mongod
 
 ![Run ETL Notebook](img/notebook_run_all.png)
 
+** Wait 5 mins. Get some ice-creem or if you are calorie concious, then get some black coffee and check your social network updates in the meantime. The fun is about to begin.
