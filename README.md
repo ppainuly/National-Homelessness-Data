@@ -88,10 +88,13 @@ Run all from Cells-->Run All
 
 Once the notebook is executed, it will create a Mongo DB database with two collections - 
 
-** Database : incarceration**
-  ** Collections - **
-    ** Prison data : jail_collection**
-    ** Homeless Data : prison_data**
+Database : incarceration
+
+Collections -
+
+  Prison data : jail_collection
+
+  Homeless Data : prison_data
     
 The following commands show our mongo db set up - 
 
