@@ -58,3 +58,14 @@ For example
 **pip install pandas**
 to install Pandas and then call the **import pandas as pd** to import pandas
 
+### Run Notebook
+
+On terminal/bash, run Mongo Instange
+<pre>
+mongod
+</pre>
+
+#### Download the notebook BJS_scraping.ipynb. Run all from Celle-->Run All
+
+![Run ETL Notebook](img/notebook_run_all.png)
+
